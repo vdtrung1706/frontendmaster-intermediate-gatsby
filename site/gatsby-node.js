@@ -13,7 +13,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     }
 
     type Book implements Node {
-      author: Author! @link(from "author" by: "slug")
+      author: Author! @link(from: "author" by: "slug")
     }
   `);
 
